@@ -6,11 +6,12 @@ function fazGet(url) {
 }
 
 function criaLinha(usuario) {
+    console.log(usuario)
     document.createElement('tr');  //cria linha
     td = document.createElement('td');  //cria coluna
     tdNome = document.createElement('td');
     tdId.innerHTML = usuario.id;    //add filho
-    tdNome.innerHTML = usuario.nome;
+    tdNome.innerHTML = usuario.name;
 
     linha.appendChild(tdId);
     linha.appendChild(tdNome);
